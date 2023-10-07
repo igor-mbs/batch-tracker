@@ -1,2 +1,0 @@
-C:\Users\mkdt\Desktop\TCC\BatchFinder\BatchFinder\bin\Microsoft.NodejsTools.WebRole.dll
-C:\Users\mkdt\Desktop\TCC\BatchFinder\BatchFinder\obj\Release\BatchFinder.njsprojAssemblyReference.cache
