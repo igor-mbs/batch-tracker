@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Batch finder</title>
+    <link rel="stylesheet" type="text/css" href="./style0.css" />
+</head>
+
+<body>
+    <div class="loginbox">
+        <img style="height: auto; width: auto; max-width: 300px; max-height: 300px;" src="company_logo.png" class="company-logo" />
+        <input type="button" class="register-button" name="register" value="Go home" onclick="window.location.href='/'" style="display: block;">
+        
+        <h1></h1>
+
+        <div class="collapse" id="batch_{batch_id}">
+            <p><strong>Data base ID: <br> </strong>
+                <% if (batchobj.batch_id != null) { %>
+                <%= batchobj.batch_id %>
+                <% } %>
+            </p>
+            <p><strong>Batch code: <br> </strong>
+                <% if (batchobj.batch_code != null) { %>
+                <%= batchobj.batch_code %>
+                <% } %>
+            </p>
+            <p><strong>SM-Ajustagem: <br> </strong>
+                <% if (batchobj.sm_ajustagem != null) { %>
+                <%= batchobj.sm_ajustagem %>
+                <% } %>
+            </p>
+            <p><strong>SM-Conformacao manual: <br> </strong>
+                <% if (batchobj.sm_conformacao_manual != null) { %>
+                <%= batchobj.sm_conformacao_manual %>
+                <% } %>
+            </p>
+            <p><strong>SM-Corte router: <br> </strong>
+                <% if (batchobj.sm_corte_router != null) { %>
+                <%= batchobj.sm_corte_router %>
+                <% } %>
+            </p>
+            <p><strong>SM-Dobradeira: <br> </strong>
+                <% if (batchobj.sm_dobradeira != null) { %>
+                <%= batchobj.sm_dobradeira %>
+                <% } %>
+            </p>
+            <p><strong>SM-Inspeção: <br> </strong>
+                <% if (batchobj.sm_inspecao != null) { %>
+                <%= batchobj.sm_inspecao %>
+                <% } %>
+            </p>
+            <p><strong>SM-Líquido penetrante NDT: <br> </strong>
+                <% if (batchobj.sm_liquido_penetrante_ndt != null) { %>
+                <%= batchobj.sm_liquido_penetrante_ndt %>
+                <% } %>
+            </p>
+            <p><strong>SM-Montagem: <br> </strong>
+                <% if (batchobj.sm_montagem != null) { %>
+                <%= batchobj.sm_montagem %>
+                <% } %>
+            </p>
+            <p><strong>SM-Pintura e identificação: <br> </strong>
+                <% if (batchobj.sm_pintura_e_identificacao != null) { %>
+                <%= batchobj.sm_pintura_e_identificacao %>
+                <% } %>
+            </p>
+            <p><strong>SM-Prensa: <br> </strong>
+                <% if (batchobj.sm_prensa != null) { %>
+                <%= batchobj.sm_prensa %>
+                <% } %>
+            </p>
+            <p><strong>SM-Rebarbagem: <br> </strong>
+                <% if (batchobj.sm_rebarbagem != null) { %>
+                <%= batchobj.sm_rebarbagem %>
+                <% } %>
+            </p>
+            <p><strong>SM-Shot peening: <br> </strong>
+                <% if (batchobj.sm_shot_peening != null) { %>
+                <%= batchobj.sm_shot_peening %>
+                <% } %>
+            </p>
+            <p><strong>SM-Tratamento superfície alodine e anodização: <br> </strong>
+                <% if (batchobj.sm_tratamento_superficie_alodine_e_anodizacao != null) { %>
+                <%= batchobj.sm_tratamento_superficie_alodine_e_anodizacao %>
+                <% } %>
+            </p>
+            <p><strong>SM-Tratamento superfície TSA: <br> </strong>
+                <% if (batchobj.sm_tratamento_superficie_tsa != null) { %>
+                <%= batchobj.sm_tratamento_superficie_tsa %>
+                <% } %>
+            </p>
+            <p><strong>SM-Tratamento térmico envelhecimento: <br> </strong>
+                <% if (batchobj.sm_tratamento_termico_envelhecimento != null) { %>
+                <%= batchobj.sm_tratamento_termico_envelhecimento %>
+                <% } %>
+            </p>
+            <p><strong>SM-Tratamento térmico solubilização: <br> </strong>
+                <% if (batchobj.sm_tratamento_termico_solubilizacao != null) { %>
+                <%= batchobj.sm_tratamento_termico_solubilizacao %>
+                <% } %>
+            </p>  
+            <br>
+            <br>
+            <br>      
+        </div>
+    </div>
+</body>
+</html>

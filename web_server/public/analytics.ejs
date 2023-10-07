@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Batch tracker</title>
+        <link rel="stylesheet" type="text/css" href="./style0.css" />
+        
+        <script src="/Chart.bundle.js"></script>
+        <!-- <link rel="stylesheet" type="text/css" href="path/to/chartjs/dist/Chart.min.css"> -->
+        
+    </head>
+
+    <body>
+        <div class="analyticsbox">
+           
+            <img style="height: auto; width: auto; max-width: 300px; max-height: 300px;" src="company_logo.png" class="company-logo" />
+           
+            <input type="button" class="register-button" name="register" value="Go home" onclick="window.location.href='/'" style="display: block;">
+            <br>
+            <!-- <input type="button" class="plot" name="plot" value="Plot" onclick="plot()" style="display: block;"> -->
+            <br> 
+           
+            <!-- 
+            tempo de permanencia no estoque
+
+            quantidade faltante
+            
+            tempo medio de conclusao de produtos
+            
+            estoque atual
+            
+            quantidade de produto
+            -->
+
+            <!-- ------------------------------------------------------------------------------------------------ -->
+            <canvas id="tempo_em_estoque" width="300" height="200" style="padding-bottom: 30px;"></canvas>
+            <script>
+                // var Chart = require('chart.js');
+                // Chart.platform.disableCSSInjection = true;
+                var ctx = document.getElementById('tempo_em_estoque').getContext('2d');
+                var tempo_em_estoque = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                        datasets: 
+                        [
+                            {
+                            label: 'Tempo em estoque',
+                            data: [2, 1, 1, 4, 2, 5],
+                            backgroundColor: ['rgba(0, 255, 0, 0.1)'],
+                            borderColor: ['rgba(0, 255, 0, 1)'],
+                            borderWidth: 3,
+                            lineTension: 0
+                            },
+                            {
+                            label: 'Tempo de conclusão',
+                            data: [12, 19, 3, 5, 2, 3],
+                            backgroundColor: ['rgba(0, 150, 255, 0.1)'],
+                            borderColor: ['rgba(0, 150, 255, 1)'],
+                            borderWidth: 3,
+                            lineTension: 0
+                            }
+                        ]
+                    },
+                    options: {
+                        scales: {
+                            // xAxes: [{
+                            //     ticks: {
+                            //         beginAtZero: true
+                            //     }
+                            // }],
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero: true
+                                }
+                            }]
+                        }
+                    }
+                });
+            </script>
+            <!-- ------------------------------------------------------------------------------------------------ -->
+
+            <!-- ------------------------------------------------------------------------------------------------ -->
+            <canvas id="tempo_por_etapa" width="300" height="300" style="padding-bottom: 30px;"></canvas>
+            <script>
+                // var Chart = require('chart.js');
+                // Chart.platform.disableCSSInjection = true;
+                var ctx = document.getElementById('tempo_por_etapa').getContext('2d');
+                var tempo_por_etapa = new Chart(ctx, {
+                    type: 'bar',
+                    data: 
+                    {
+                        labels: ['Ajustagem', 'Conformação manual', 'Corte router', 'Dobradeira', 'Inspeção', 'líquido penetrante NDT', 'Montagem', 'Pintura e identificação', 'Prensa', 'Rebarbagem', 'Shot peening', "Alodine e anodização", 'TSA', 'Envelhecimento', 'Solubilização'],
+                        datasets: 
+                        [{
+                            label: 'Tempo médio por etapa',
+                            data: [12, 19, 3, 5, 2, 3, 5, 8, 6, 8, 7, 9, 4, 5, 6],
+                            backgroundColor: 'rgba(0, 255, 0, 0.1)',
+                            borderColor: 'rgba(0, 255, 0, 1)',
+                            borderWidth: 3,
+                            lineTension: 0
+                        }]
+                    },
+                    options: 
+                    {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                display: false,
+                                position: 'top'
+                            },
+                            title: {
+                                display: true,
+                                text: 'Chart.js Bar Chart'
+                            }
+                        }
+                    },
+                });
+            </script>
+            <!-- ------------------------------------------------------------------------------------------------ -->
+        </div>
+    </body>
+</html>

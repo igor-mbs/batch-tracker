@@ -1,0 +1,335 @@
+﻿
+/*---------------------------------------*/
+/*--------------- general ---------------*/
+/*---------------------------------------*/
+
+body {
+    font-family: Calibri;
+}
+
+.company-logo {
+    position: relative;
+    top: -5%;
+    left: 15%;
+    /* transform: translate(-50%,-50%); */
+
+    height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
+}
+
+input[type=submit] {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 15px;
+    display: block;
+    margin: 0 auto;
+    margin-top:20px;
+    outline: none;
+    border-radius: 5px;
+    background-color: #69e44a;
+    border: solid;
+    border-color: #69e44a;
+    color: black;
+    background: #69e44a;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: black;
+}
+
+input[type=button] {
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 15px;
+    display: inline-block;
+    margin: 0 auto;
+    outline: none;
+    border-radius: 5px;
+    background-color: #69e44a;
+    border: solid;
+    border-color: #69e44a;
+    color: black;
+    background: #69e44a;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+input[type=button]:hover {
+    background-color: white;
+    color: black;
+}
+
+input[type=text] {
+    width: 99%;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 16px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline:none;
+}
+
+input[type=password] {
+    width: 99%;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 16px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+
+input[type=email] {
+    width: 99%;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 16px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline:none;
+}
+
+select {
+    font-size: 16px;
+    text-align: center;
+    width: 120px;
+    padding-left:5px;
+    padding-right:5px;
+    padding-bottom:2px;
+    padding-top:2px;
+    outline: none;
+    border: solid 2px;
+    border-color: #69e44a;
+    border-radius: 5px;
+}
+
+fieldset {
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid;
+    border-color: #69e44a;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+/*----------------------------------------*/
+/*-------------- index.html --------------*/
+/*----------------------------------------*/
+
+h1 {
+    padding-top: 0px;
+    text-align: center;
+    color: #808080;
+    font-size: 35px;
+    transform: translate(0px, -15px);
+}
+
+fieldset[name="login-fieldset"] {
+    display: block;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+.loginbox {
+    background-color: transparent;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,5%);
+    padding-bottom: 200px;
+}
+
+/*-----------------------------------------*/
+/*--------------- home.html ---------------*/
+/*-----------------------------------------*/
+
+.log-out-button {
+    transform: translate(75px,0%);
+}
+
+.edit-button {
+    transform: translate(0%, 20px);
+}
+
+.analytics-button {
+    transform: translate(85px, 20px);
+}
+
+h3 {
+    text-align: center;
+    color: #808080;
+    padding-top: 20px;
+    transform: translate(0px, 15px);
+    font-size: 30px;
+}
+
+.batch-box {
+    background-color:transparent;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,5%);
+    padding-bottom: 200px;
+}
+
+.batch-box input[type=text] {
+    float: left;
+    width: 320px;
+    height: 50px;
+    margin: 0px;
+    text-align: left;
+    font-size: 25px;
+    padding: 0px;
+    padding-left: 20px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-left: solid;
+    border-top: solid;
+    border-bottom: solid;
+    outline: none;
+    border-color: #69e44a;
+}
+
+.batch-box input[type=image] {
+    width: 40px;
+    height: 40px;
+    padding:5px;
+    padding-left:1px;
+    display: block;
+    margin: 0px;
+    outline: none;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background: #69e44a;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    border-right: solid;
+    border-left: solid;
+    border-top: solid;
+    border-bottom: solid;
+    cursor: pointer;
+    vertical-align: middle;
+    border-color: #69e44a;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+input[type=image]:hover {
+    background-color: white;
+    color: black;
+}
+
+/*-------------------------------------------*/
+/*-------------- register.html --------------*/
+/*-------------------------------------------*/
+
+.register-div {
+    background-color: transparent;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,2%);
+    padding-bottom: 680px;
+}
+
+fieldset[name="clearence-fieldset"] {
+    display: block;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+fieldset[name="account-info"] {
+    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+.register-div input[id=register-first] {
+    width: 175px;
+    float: left;
+    display: inline-block;
+}
+
+.register-div input[id=register-last] {
+    width: 175px;
+    float:right;
+    display: inline-block;
+}
+
+.register-div input[id=InputPassword1] {
+    margin-bottom: 30px;
+}
+
+fieldset[name="account-type"] {
+    margin-top:10px;
+}
+
+.radios {
+    font-size:16px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input[type=radio] {
+    display: none;
+}
+span[class=radio-accounttype] {
+    width: 100px;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 0px;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    background-color: #69e44a;
+    border: solid;
+    border-color: #69e44a;
+    color: black;
+    background: #69e44a;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+label input:checked ~ span {
+    background-color: white;
+    color: black;
+}
+
+/*-------------------------------------------*/
+/*-------------- analytics.html --------------*/
+/*-------------------------------------------*/
+
+.analyticsbox {
+    background-color: transparent;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,5%);
+    padding-bottom: 200px;
+}

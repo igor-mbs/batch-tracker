@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Batch finder</title>
+    <link rel="stylesheet" type="text/css" href="./style0.css" />
+</head>
+
+<body>
+    <div class="register-div">
+        <img style="height: auto; width: auto; max-width: 300px; max-height: 300px;" src="company_logo.png" class="company-logo" />
+        <input type="button" class="register-button" name="register" value="Go home" onclick="window.location.href='/'" style="display: block;">
+        <br>
+        <br>
+        <form action="/edituser" method="POST">
+
+            <!-------------clearence part----------------->
+            <!--<form name="clearence-form">-->
+                <fieldset name="clearence-fieldset">
+                    <legend>&nbsp;Current info.:&nbsp;</legend>
+                    <div class="form-group">
+                        <input type="text" class="useremail" id="useremail" name="useremail" placeholder="User" required>
+                    </div>
+
+                    <div class="form-group-row">
+                        <input type="password" class="userpassword" id="userpassword" name="userpassword" placeholder="Password" required>
+                    </div>
+                </fieldset>
+
+                <% if (clearencemessage != null) { %>
+                <%= clearencemessage %>
+                <% } %>
+
+                <!--</form>-->
+
+                <br>
+                <br>
+            <!-------------register part----------------->
+            <fieldset name="account-info">
+                <legend>&nbsp;New info.:&nbsp;</legend>
+                <!--<form class="form-inline">-->
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="regfirst" name="regfirst" placeholder="First name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="reglast" name="reglast" placeholder="Last name" required>
+                    </div>
+                <!--</form>-->
+
+                <div class="form-group">
+                    <input type="email" class="form-control" id="regemail" name="regemail" aria-describedby="emailHelp" placeholder="Email address" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="password" class="form-control" id="regpassword1" name="regpassword1" placeholder="Password" style="margin-bottom: 30px;" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="password" class="form-control" id="regpassword2" name="regpassword2" placeholder="Repeat password" required>
+                </div>
+            </fieldset>
+
+            <% if (errormessage != null) { %>
+                <%= errormessage %>
+                <% } %>
+                <br>
+            <input id="Submit2" type="submit" value="Submit" />
+        </form>
+    </div>
+</body>
+</html>

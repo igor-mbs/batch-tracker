@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Batch finder</title>
+    <link rel="stylesheet" type="text/css" href="./style0.css" />
+</head>
+
+<body>
+    <div class="loginbox">
+        <img src="company_logo.png" class="company-logo" />
+        <h1>Batch tracker</h1>
+
+        <form action="/login" method="POST">
+            <fieldset name="login-fieldset">
+                <legend>&nbsp;Login:&nbsp;</legend>
+                <input placeholder="Username" id="user" type="text" name="user" required />
+                <input placeholder="Password" id="password" type="password" name="password" required />
+            </fieldset>
+
+            <% if (messages.error) { %>
+            <%= messages.error %>
+            <% } %>
+
+            <input id="Submit1" type="submit" />
+        </form>
+    </div>
+</body>
+</html>

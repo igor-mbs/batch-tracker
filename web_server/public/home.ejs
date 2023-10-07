@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Batch tracker</title>
+    <link rel="stylesheet" type="text/css" href="./style0.css" />
+</head>
+
+<body>
+    <div class="batch-box">
+       <img src="company_logo.png" class="company-logo" />
+
+        <!--<form method="POST" action="/register">-->
+            <input type="button" class="register-button" name="register" value="Create new account" onclick="window.location.href='/register'">
+        <!--</form>-->
+
+        <!--<form action="/logout?_method=DELETE" method="POST">-->
+            <input type="button" class="log-out-button" name="log-out" value="Log out" onclick="window.location.href='/logout'">
+        <!--</form>-->
+            
+        <input type="button" class="edit-button" name="edit" value="Edit your account" onclick="window.location.href='/edituser'">
+
+        <input type="button" class="analytics-button" name="analytics" value="Analytics" onclick="window.location.href='/analytics'">
+
+        <h3>Find batch:</h3>
+        <form action="/search" method="POST">
+            <span class="search-span">
+                <input placeholder="Batch code" id="batchnumbersearch" class="form-control" name="batchnumbersearch" type="text" />
+                <input type="image" class="searchbutton" name="search" src="lupe0.png" alt="Search">
+                <!-- <input id="Submitsearch" type="submit" value="Submit" /> -->
+            </span>
+        </form>
+        <br>
+        <% if (batchmessage != null) { %>
+            <%= batchmessage %>
+            <% } %>
+    </div>
+</body>
+</html>
